@@ -1,0 +1,202 @@
+/* Esercizio 1 */
+.ex-1-square {
+  transition: 2s;
+}
+
+.ex-1-square:hover {
+  background: red;
+}
+
+/* Esercizio 2 */
+.ex-2-square {
+  transition: 1.5s;
+}
+
+.ex-2-square:active {
+  width: 100%;
+}
+
+/* Esercizio 3  */
+.ex-3-square {
+  transition: 2s;
+}
+
+.ex-3-square:hover {
+  border-radius: 100%;
+}
+
+/* Esercizio 4  */
+.ex-4-square {
+  transition: 1s;
+}
+
+.ex-4-square:hover {
+  opacity: 0;
+}
+
+/* Esercizio 5 */
+.ex-5-square {
+  transition: 1.5s;
+}
+
+.ex-5-square:hover {
+  transform: scale(2);
+}
+
+.ex-5-square:active {
+  transform: scale(0.3);
+}
+
+/* Esercizio 6  */
+.ex-6-img:hover {
+  filter: grayscale(100%);
+}
+
+/* Esercizio 7 */
+.ex-7-img {
+  transition: 1.5s;
+}
+
+.ex-7-img:hover {
+  filter: grayscale(50%);
+  filter: sepia(50%);
+}
+
+/* Esercizio 8 / 9*/
+.ex-8-img,
+.ex-9-img {
+  transition: 2s;
+}
+
+.ex-8-img:hover,
+.ex-9-img:hover {
+  filter: grayscale(80%);
+  filter: sepia(40%);
+  border-radius: 25px;
+}
+
+.ex-9-img:hover {
+  filter: scale(2);
+}
+
+/* Esercizio 10  */
+.ex-10-icon {
+  animation: rotate 1.5s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotate(360deg);
+  }
+}
+
+/* Esercizio 11 */
+.ex-11-icon:hover {
+  animation: spin_270 2s linear;
+}
+
+@keyframes spin_270 {
+  0% {
+     transform: rotate(0);
+  }
+  95% {
+      transform: rotate(270deg);
+  }
+  100% {
+      transform: rotate(0);
+  }
+}
+
+/* Esercizio 12 */
+.ex-12-button:hover .ex-12-bottom-white {
+  animation: BottomWhite 2s linear;
+}
+.ex-12-button:hover .ex-12-top-white {
+  animation: TopWhite 2s linear;
+}
+
+@keyframes BottomWhite {
+  0% {
+      right: 20%;
+  }
+  50% {
+      right: calc(100% - 60px);
+  }
+  100% {
+      right: 20%;
+  }
+}
+
+@keyframes TopWhite {
+  0% {
+      left: 10%;
+  }
+  50% {
+      left: calc(100% - 60px);
+  }
+  100% {
+      left: 10%;
+  }
+}
+
+/* Esercizio 13 */
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: BottomWhiteEx13 2s linear;
+}
+.ex-13-button:hover .ex-13-top-white {
+  animation: TopWhiteEx13 2s linear;
+}
+
+@keyframes BottomWhiteEx13 {
+  0% {
+      bottom: -10px;
+      right: 20%;
+  }
+  20% {
+      right: calc(100% - 30px);
+      bottom: -10px;
+  }
+  40% {
+      right: calc(100% - 30px);
+      bottom: 100%;
+  }
+  60% {
+      right: 0;
+      bottom: 100%;
+  }
+  80% {
+      right: -15px;
+      bottom: -10px;
+  }
+  100% {
+      bottom: -10px;
+      right: 20%;
+  }
+}
+
+@keyframes TopWhiteEx13 {
+  0% {
+      top: -10px;
+      left: 10%;
+  }
+  20% {
+      left: calc(100% - 30px);
+      top: -10px;
+  }
+  40% {
+      left: calc(100% - 30px);
+      top: 100%;
+  }
+  60% {
+      left: 0;
+      top: 100%;
+  }
+  80% {
+      left: -15px;
+      top: -10px;
+  }
+  100% {
+      top: -10px;
+      left: 10%;
+  }
+}
